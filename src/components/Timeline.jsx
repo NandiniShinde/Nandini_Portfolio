@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import { motion } from 'framer-motion';
-import { FaGraduationCap, FaBriefcase, FaCode } from 'react-icons/fa';
+import { FaBriefcase, FaCode } from 'react-icons/fa';
 
 const Timeline = () => {
   const timelineData = [
@@ -114,16 +114,16 @@ const Timeline = () => {
 ];
 
 
-  const getIcon = (type) => {
-    switch (type) {
-      case 'education':
-        return <FaGraduationCap className="text-primary" />;
-      case 'work':
-        return <FaBriefcase className="text-primary" />;
-      default:
-        return <FaCode className="text-primary" />;
-    }
-  };
+  // const getIcon = (type) => {
+  //   switch (type) {
+  //     case 'education':
+  //       return <FaGraduationCap className="text-primary" />;
+  //     case 'work':
+  //       return <FaBriefcase className="text-primary" />;
+  //     default:
+  //       return <FaCode className="text-primary" />;
+  //   }
+  // };
 
   return (
     <section id="timeline" className="timeline-section py-5">
@@ -218,7 +218,7 @@ const Timeline = () => {
                       </p>
                       {item.gpa && (
                         <p className="mb-1">
-                          <span className="text-secondary">GPA:</span> {item.gpa}
+                          <span className="text-secondary">CGPA:</span> {item.gpa}
                         </p>
                       )}
                     </div>

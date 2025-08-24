@@ -19,7 +19,8 @@ const Projects = () => {
         'Independently led all data engineering deliverables for the UI team, ensuring seamless data access.',
         'Collaborated with cross-functional teams on healthcare compliance',
         'Automated ETL jobs with Apache Airflow, improving reliability and reducing manual intervention.'
-      ]
+      ],
+      // github: "https://github.com/NandiniShinde" 
     },
     {
       id: 2,
@@ -30,7 +31,8 @@ const Projects = () => {
       achievements: [
         'Engineered prompts that boosted LLM response accuracy by ~25%',
         'Worked on more that 6+ different tech projects, each with unique requirements and judged more than 10,000+ responses.'
-      ]
+      ],
+      // github: "https://github.com/NandiniShinde/nominator-webapp" 
     },
     {
       id: 3,
@@ -41,7 +43,8 @@ const Projects = () => {
       achievements: [
       'Worked with a team of 3 to build a Sanskrit chatbot',
       'Presented project at university hackathon'
-    ]
+      ],
+      github: "https://github.com/NandiniShinde/MajorProject-Sanskrit-Chatbot" 
     },
     {
       id: 4,
@@ -52,7 +55,8 @@ const Projects = () => {
       technologies: ['python', 'flask', 'sqlalchemy', 'html', 'css', 'bootstrap'],
       achievements:['Role: Full-Stack Developer',
         'Developed backend APIs using Flask and SQLAlchemy',
-        'Design responsive UI with Bootstrap']
+        'Design responsive UI with Bootstrap'],
+      github: "https://github.com/shantanavKapse/MinorProject" 
     },
     {
       id: 5,
@@ -62,7 +66,8 @@ const Projects = () => {
       image: 'assets/images/gesture-volume.png',
       technologies: ['python', 'opencv'],
       achievements:['Implemented real-time hand tracking using OpenCV with >90% accuracy in gesture detection.',
-        'Strengthened knowledge in computer vision & human–computer interaction.']
+        'Strengthened knowledge in computer vision & human–computer interaction.'],
+      github: "https://github.com/NandiniShinde/Controlling-Volume-hand-Gestures" 
     },
     {
       id: 6,
@@ -73,7 +78,8 @@ const Projects = () => {
       technologies: ['python', 'nltk', 'sklearn', 'random forest algorithm'],
       achievements:['Processed and cleaned 5,000+ restaurant reviews for text classification.',
         'Achieved 85% accuracy in using Random Forest with NLTK preprocessing.',
-        'Demonstrated ability to translate unstructured text into actionable business insights.']
+        'Demonstrated ability to translate unstructured text into actionable business insights.'],
+      // github: "https://github.com/NandiniShinde/nominator-webapp" 
     }
 ];
   const visibleProjects = showAll ? projects : projects.slice(0, 4);
@@ -107,21 +113,22 @@ const Projects = () => {
           ))}
         </Row>
         <motion.div
-          className="text-center mt-5"
+          className="text-center mt-3"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}
           viewport={{ once: true }}
         >
-        <Button 
-          variant="primary" 
-          className="custom-btn d-flex align-items-center justify-content-center mx-auto"
-          style={{ minWidth: 180 }}
-          onClick={() => setShowAll(!showAll)}
-        >
-          <span className="me-2">{showAll ? 'Show Less' : 'Show More'}</span>
-          {showAll ? <FaArrowUp /> : <FaArrowRight />}
-        </Button>
+        <div className="d-flex justify-content-center mt-3">
+          <Button 
+            className="custom-btn d-flex align-items-center"
+            style={{ minWidth: 180 }}
+            onClick={() => setShowAll(!showAll)}
+          >
+            <span className="me-2">{showAll ? 'Show Less' : 'Show More'}</span>
+            {showAll ? <FaArrowUp /> : <FaArrowRight />}
+          </Button>
+        </div>
 
         </motion.div>
       </Container>

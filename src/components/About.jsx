@@ -82,11 +82,15 @@ const About = () => {
               <h3 className="fs-3 mb-3">
                 Building with data. Creating with heart.
               </h3>
-              <p className="mb-4 text-secondary">
-                I'm a data engineer who enjoys transforming complex data into meaningful solutions. I’ve worked with tools like Snowflake, Airflow, and Python to build scalable pipelines, and I love making data work smarter for people.<br />
-                I'm enthusiastic about transforming messy data into meaningful insights, and have a strong foundation in data warehousing and machine learning.<br /><br />
-                Currently, I'm now on the lookout for opportunities in tech company in India, United States or Europe to  bring my skills and enthusiasm in innovative and impactful teams. <br /><br />
-                Always learning. Always building. Always improving.
+              <p className="mb-4 text-secondary ">
+                I’m a data engineer passionate about transforming messy data into meaningful insights.  
+                I’ve worked with Snowflake, Airflow, and Python to design scalable pipelines, and I enjoy making data work smarter for people.  
+                With a strong foundation in data warehousing, machine learning, and AI, I also explore backend development using Python Flask and modern web tools.<br/>  
+
+                I am AWS Cloud Practitioner certified and bring one year of hands-on experience working with Large Language Models (LLMs),  
+                while staying open to opportunities across Data Engineering, AI/ML, and Backend Development.<br/>  
+
+                Currently, I’m looking for opportunities in India, the US, or Europe where I can contribute my skills and enthusiasm to innovative and impactful teams.
               </p>
               <div className="mb-3">
                 <strong>Fun Facts:</strong>
@@ -95,23 +99,23 @@ const About = () => {
                   <li>Always curious to learn new tech tools or try creative DIY ideas</li>
                 </ul>
               </div>
-              {/* <a variant="primary" className="custom-btn me-2"
-                onClick={() => window.open('/NandiniShindeResume.pdf', 'download', '_blank', 'noopener,noreferrer')}>
-                My Resume
-              </a> */}
-              {/* <Button
-                as="a"
-                href="/NandiniShindeResume.pdf"
-                className="custom-btn me-2"
-                target = "_blank"
-                rel="noopener noreferrer"
-              >
-                My Resume
-              </Button>
-
-              <Button variant="outline-primary" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
-                Let's Collaborate!
-              </Button> */}
+              {/* Resume Button */}
+              <div className="d-flex gap-3">
+                <a
+                  href="/NandiniShindeResume.pdf"
+                  className="btn btn-primary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Resume
+                </a>
+                <button
+                  className="btn btn-primary"
+                  onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                >
+                  Let's Collaborate!
+                </button>
+              </div>
             </Col>
           </Row>
         </div>

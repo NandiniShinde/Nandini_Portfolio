@@ -31,9 +31,11 @@ const Hero = () => {
               />
             </span>
             <p className="text-secondary mb-4">
-            I transform complex datasets into clear, actionable insights and efficient data workflows.<br />
-            With hands-on experience in Python, SQL, Airflow, and Snowflake. <br /> I enjoy designing systems that make data more accessible and impactful.<br /><br />
-            Exploring modern data tools and always excited to collaborate on meaningful tech solutions.
+            I build reliable data workflows and scalable solutions that turn complex datasets into clear insights.<br/>  
+            With experience in Python, SQL, Airflow, Snowflake, and AWS, I design systems that make data more impactful.<br/>  
+
+            Always curious, always building — exploring backend development, cloud, and AI to create meaningful tech solutions.  
+
             </p>
             <div className="d-flex gap-3 mb-6">
               <Button variant="primary" className="custom-btn d-flex align-items-center"
